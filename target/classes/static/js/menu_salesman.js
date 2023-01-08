@@ -1,3 +1,0 @@
-$(function() {
-    verify(0);
-})
