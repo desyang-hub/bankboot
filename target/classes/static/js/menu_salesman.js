@@ -1,0 +1,3 @@
+$(function() {
+    verify(0);
+})

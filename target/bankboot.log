@@ -1,0 +1,35 @@
+nohup: ignoring input
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.7.RELEASE)
+
+2023-01-08 20:32:11.259  INFO 9267 --- [           main] com.bankboot.BankbootApplication         : Starting BankbootApplication on Ubuntu with PID 9267 (/home/des/Desktop/git/bankboot/target/bankboot-0.0.1-SNAPSHOT.jar started by root in /home/des/Desktop/git/bankboot/target)
+2023-01-08 20:32:11.270  INFO 9267 --- [           main] com.bankboot.BankbootApplication         : No active profile set, falling back to default profiles: default
+2023-01-08 20:32:14.941  INFO 9267 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-01-08 20:32:14.969  INFO 9267 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-08 20:32:14.970  INFO 9267 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-01-08 20:32:15.173  INFO 9267 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-08 20:32:15.173  INFO 9267 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3692 ms
+2023-01-08 20:32:15.488  INFO 9267 --- [           main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-01-08 20:32:16.185  INFO 9267 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-01-08 20:32:17.152  INFO 9267 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-01-08 20:32:17.405  INFO 9267 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-01-08 20:32:17.817  INFO 9267 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-01-08 20:32:17.853  INFO 9267 --- [           main] com.bankboot.BankbootApplication         : Started BankbootApplication in 8.015 seconds (JVM running for 9.46)
+2023-01-08 20:32:40.193  INFO 9267 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-08 20:32:40.194  INFO 9267 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-08 20:32:40.222  INFO 9267 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2023-01-08 20:32:46.218  INFO 9267 --- [nio-8081-exec-1] c.bankboot.controller.AccountController  : 10001登录
+2023-01-08 20:32:49.329  INFO 9267 --- [nio-8081-exec-4] c.bankboot.controller.AccountController  : 身份核验
+2023-01-08 20:33:05.243  INFO 9267 --- [nio-8081-exec-4] c.b.controller.SalesmanController        : 身份核验
+2023-01-08 20:33:05.310  INFO 9267 --- [nio-8081-exec-4] com.bankboot.utils.JWTUtils              : token验证失败
+2023-01-08 20:33:14.786  INFO 9267 --- [nio-8081-exec-2] c.bankboot.controller.AccountController  : 10001登录
+2023-01-08 20:33:16.359  INFO 9267 --- [nio-8081-exec-7] c.bankboot.controller.AccountController  : 身份核验
+2023-01-08 20:33:31.708  INFO 9267 --- [nio-8081-exec-6] com.bankboot.controller.ATMController    : atm server starting ...
+2023-01-08 21:05:33.400  INFO 9267 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-01-08 21:05:33.452  INFO 9267 --- [extShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

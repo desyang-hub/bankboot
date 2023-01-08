@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 背景图片 */
+body {
+    background-image: url(../images/icon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* 背景虚化 */
+html::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    backdrop-filter: saturate(200%) contrast(90%) blur(4.5px);
+}
+
+/* 大盒子 */
+.box {
+    margin: 10% auto;
+    height: 400px;
+    width: 700px;
+}
+
+.top {
+    display: flex;
+    /* border-radius: 50px; */
+}
+
+.bottom {
+    background-color: rgba(225, 228, 231, 0.699);
+    height: 350px;
+    width: 700px;
+    border-radius: 0px 50px 50px 50px;
+}
+
+.defaultHidden {
+    display: none;
+}
+
+h1 {
+    display: inline-block;
+    background-color: rgba(225, 228, 231, 0.699);
+    width: 200px;
+    height: 50px;
+    border-radius: 50px 50px 0px 0px;
+    font-size: 25px;
+    text-align: center;
+    padding: 7px ;
+}
+
+.submit:hover,
+h1:hover {
+    box-shadow: 0 0 2rem -0.5rem rgba(0, 0, 0, 0.918);
+    /* 鼠标经过盒子有黑色阴影 */
+}
+
+.chose2 {
+    background-color: rgba(0, 0, 0, 0.671);
+    color: aliceblue;
+}
+
+input[type=text],
+input[type=password] {
+    width: 70%;
+    outline: none;
+    padding: 12px 20px;
+    margin: 39px 0px 8px 9px;
+    display: inline-block;
+    border: none;
+    border-bottom: solid #8ec5fc 1px;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 153px;
+    height: 46px;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    margin: 38px 278px 0px;
+}
+
+label {
+    display: inline-block;
+    margin: 0px 6px 0px 70px;
+}
+
+img {
+    display: inline;
+    float: right;
+    width: 40px;
+}
+
+.box-img {
+    margin: 0px 25px 0px;
+}
+
+img:hover {
+    cursor:pointer;
+    box-shadow: 0 0 2rem -0.5rem rgba(255, 255, 255, 0.918);
+}

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 背景图片 */
+body {
+    background-image: url(../images/icon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* 背景虚化 */
+html::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    backdrop-filter: saturate(200%) contrast(90%) blur(4.5px);
+}
+
+/* 大盒子 */
+.box {
+    margin: 10% auto;
+    height: 400px;
+    width: 700px;
+}
+
+.bottom {
+    background-color: rgba(225, 228, 231, 0.699);
+    height: 350px;
+    width: 700px;
+    border-radius: 0px 50px 50px 50px;
+}
+
+.defaultHidden {
+    display: none;
+}
+
+h1 {
+    display: inline-block;
+    background-color: rgba(225, 228, 231, 0.699);
+    width: 200px;
+    height: 50px;
+    border-radius: 50px 50px 0px 0px;
+    font-size: 25px;
+    text-align: center;
+    padding: 7px ;
+}
+
+button:hover,
+h1:hover {
+    box-shadow: 0 0 2rem -0.5rem rgba(0, 0, 0, 0.918);
+    /* 鼠标经过盒子有黑色阴影 */
+}
+
+.balance-item {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+#balance {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    display:inline
+}
+
+.container {
+    text-align: center;
+}

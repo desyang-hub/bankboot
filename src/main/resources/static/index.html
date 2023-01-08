@@ -1,0 +1,54 @@
+<!--
+ * @Author: Anna 2838539481@qq.com
+ * @Date: 2022-12-06 10:12:46
+ * @LastEditors: Anna 2838539481@qq.com
+ * @LastEditTime: 2022-12-09 10:12:21
+ * @FilePath: \bankfront\index.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./component/jquery-1.10.2.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+    <script src="./component/config.js"></script>
+    <script src="./component/toast.js"></script>
+    <script src="./component/api.js"></script>
+    <link rel="stylesheet" href="../css/toast.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>login</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box-img"><img id="imgBtn" src="./images/stop_server.svg" alt="加载中..."></div>
+        
+        <div class="top">
+            <h1 class="chose1" id="choose1">储户登录</h1>
+            <h1 class="chose2" id="choose2">业务员登录</h1>
+        </div>
+        <div class="bottom">
+            <div class="left" id="left">
+                <label for="username">卡号</label>
+                <input type="text" id="depositor" placeholder="请输入卡号">
+                <br>
+                <label for="password">密码</label>
+                <input type="password" id="uPass" placeholder="请输入密码">
+            </div>
+            <div class="right defaultHidden" id="right">
+                <label for="username">工号</label>
+                <input type="text" id="salesperson" placeholder="请输入工号">
+                <br>
+                <label for="password">密码</label>
+                <input type="password" id="sPass" placeholder="请输入密码">
+            </div>
+            <input class="submit" type="submit" id="submit" value="登录" />
+        </div>
+    </div>
+</body>
+
+</html>
